@@ -1,0 +1,138 @@
+* {
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body{
+    font-size: 100%;
+}
+
+.cabecalho-contato {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    background-color: #00008B;
+    padding: 5px;
+    padding-right: 220px;
+    color: white;
+}
+.cabecalho {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: space-around;
+    padding: 10px;
+    padding-right: 35px;
+    padding-left: 40px;
+}
+.cabecalho-menu {
+    display: flex;
+    gap: 15px;
+}
+.cabecalho-menu-item {
+    font-family: 'Open Sans', sans-serif;
+    color: #A9A9A9;
+}
+.cabecalho-menu-item ul li{
+    display: none;
+    list-style: none;
+    background-color: #00008B;
+    color: white;
+    width: 100px;
+    height: 20px;
+    text-align: center;
+    font-size: 12px;
+    padding: 5px;
+    position: relative;
+    z-index: 1;
+}
+.cabecalho-menu-item ul li:hover {
+    background-color: blue;
+}
+.cabecalho-menu-item:hover > ul > li {
+    display: block;
+}
+.cabecalho-menu-item ul li:hover > ul > li{
+    display: block;
+}
+.cabecalho-menu-item ul ul {
+    margin-left: 95px;
+    top: 0px;
+    position: absolute;
+    z-index: 1;
+}
+.slider {
+    display: flex;
+    width: 894px;
+    height: 290px;
+    outline: 3px solid #A9A9A9A9;
+    border-width: 50px;
+    overflow: hidden;
+    margin: 10px auto;
+    z-index: 0;
+}
+.slider ul{
+    list-style: none;
+    width: 1200px;
+    height: 290px;
+}
+.slider li{
+    position: relative;
+    animation: slide 10s infinite ease-out;
+}
+@keyframes slide {
+    0%{left: 0px}
+    20%{left:0px}
+    50%{left:-900px}
+    90%{left:-900px}
+    100%{left:0px}
+}
+.conteudo-descricao {
+    display: flex;
+    gap: 140px;
+    padding: 10px;
+}
+.conteudo-texto {
+    padding-left: 215px;
+    font-family: 'Open Sans', sans-serif;
+    color: #A9A9A9;
+}
+.boxes {
+    padding-left: 225px;
+    font-family: 'Open Sans', sans-serif;
+    color: #A9A9A9;
+}
+.boxes-imagem {
+    display: inline-flex;
+    gap: 37px;
+    padding: 10px;
+    padding-left: 225px;
+}
+.descricao-imagem {
+    display: flex;
+    font-family: 'Open Sans', sans-serif;
+    color: #A9A9A9;
+    gap: 37px;
+    padding: 10px;
+    padding-left: 225px;
+    padding-right: 225px;
+}
+.rodape {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 60px;
+    padding-right: 35px;
+    padding-left: 40px;
+    background-color: #525050;
+    gap: 32px;
+    
+}
+.rodape-item {
+    text-align: start;
+    font-family: 'Open Sans', sans-serif;
+    color:#A9A9A9;
+}
